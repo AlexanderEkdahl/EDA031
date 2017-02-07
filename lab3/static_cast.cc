@@ -1,7 +1,7 @@
 #include <iostream>
 #include <sstream>
-#include "date.h"
 #include <stdexcept>
+#include "date.h"
 
 template <typename T>
 T string_cast(std::string str) {
