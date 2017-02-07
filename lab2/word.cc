@@ -1,6 +1,6 @@
+#include "word.h"
 #include <string>
 #include <vector>
-#include "word.h"
 
 Word::Word(const std::string& w, const std::vector<std::string>& t)
     : word(w), trigrams(t) {}

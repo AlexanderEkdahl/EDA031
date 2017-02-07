@@ -1,11 +1,11 @@
+#include "dictionary.h"
+#include <algorithm>
+#include <fstream>
+#include <iostream>
+#include <list>
 #include <string>
 #include <vector>
-#include <fstream>
-#include <list>
-#include <iostream>
-#include <algorithm>
 #include "word.h"
-#include "dictionary.h"
 
 Dictionary::Dictionary() {
   std::ifstream fin("/usr/share/dict/words");
