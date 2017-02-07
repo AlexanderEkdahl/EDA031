@@ -1,5 +1,5 @@
-#include <iostream>
 #include "list.h"
+#include <iostream>
 
 List::List() : first(nullptr) {}
 
@@ -58,8 +58,6 @@ void List::remove(int d, DeleteFlag df) {
         break;
       case DeleteFlag::GREATER:
         found = currNode->value > d;
-        break;
-      default:
         break;
     }
 
