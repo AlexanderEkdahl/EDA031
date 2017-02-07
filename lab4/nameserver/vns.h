@@ -1,6 +1,5 @@
-#include "nameserverinterface.h"
 #include <vector>
-#include <utility>
+#include "nameserverinterface.h"
 
 class VNS : public NameServerInterface {
  public:

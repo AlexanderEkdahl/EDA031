@@ -1,6 +1,6 @@
 #include <iostream>
-#include "bitset.h"
 #include "bitreference.h"
+#include "bitset.h"
 
 /*
  *         TEST, VERSION 1

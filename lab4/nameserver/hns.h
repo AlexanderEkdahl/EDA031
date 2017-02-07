@@ -1,8 +1,8 @@
-#include "nameserverinterface.h"
-#include <vector>
+#include <algorithm>
 #include <functional>
 #include <string>
-#include <algorithm>
+#include <vector>
+#include "nameserverinterface.h"
 
 class HNS : public NameServerInterface {
  public:

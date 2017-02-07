@@ -1,8 +1,8 @@
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 #include <iterator>
-#include "bitset.h"
 #include "bitreference.h"
+#include "bitset.h"
 #include "bitsetiterator.h"
 
 /*

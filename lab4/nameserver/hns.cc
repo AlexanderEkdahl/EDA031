@@ -5,6 +5,8 @@ HNS::HNS(int size) { db.resize(size); }
 
 void HNS::insert(const HostName& hostName, const IPAddress& ipAddress) {
   std::pair<HostName, IPAddress> p = std::make_pair(hostName, ipAddress);
+
+  // Rehash all contents
   if (++nbr_of_elements >= db.size() / 2) {
     std::vector<std::vector<std::pair<HostName, IPAddress>>> new_db;
     new_db.resize(2 * db.size());
@@ -15,6 +17,7 @@ void HNS::insert(const HostName& hostName, const IPAddress& ipAddress) {
     }
     db = new_db;
   }
+
   db[hasher(p.first) % db.size()].push_back(p);
 }
 
